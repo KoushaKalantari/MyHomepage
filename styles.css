@@ -167,7 +167,33 @@ a:hover {
 }
 
 .hero-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: clamp(34px, 6vw, 76px);
+  align-items: center;
   padding-top: 8px;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-portrait {
+  margin: 0;
+  align-self: center;
+  border: 1px solid rgba(213, 231, 255, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--panel-soft);
+  box-shadow: var(--shadow);
+}
+
+.hero-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.9) contrast(1.04) brightness(0.95);
 }
 
 .eyebrow,
@@ -524,6 +550,14 @@ h3 {
     font-size: 2rem;
   }
 
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    max-width: 320px;
+  }
+
   .intro-grid,
   .feature-grid,
   .note-grid,
@@ -566,11 +600,15 @@ h3 {
 
   .hero-media {
     width: 100%;
-    opacity: 0.28;
+    opacity: 0.18;
   }
 
   .hero-overlay {
     background: rgba(3, 7, 17, 0.78);
+  }
+
+  .hero-portrait {
+    max-width: 280px;
   }
 
   h1 {
