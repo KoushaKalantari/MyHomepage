@@ -153,7 +153,7 @@ a:hover {
 
 .hero-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
   gap: clamp(34px, 6vw, 70px);
   align-items: center;
   padding-top: 8px;
@@ -486,7 +486,7 @@ h3 {
   }
 
   .hero-portrait {
-    max-width: 320px;
+    max-width: 360px;
   }
 
   .intro-grid,
@@ -534,7 +534,7 @@ h3 {
   }
 
   .hero-portrait {
-    max-width: 280px;
+    max-width: 320px;
   }
 
   h1 {
